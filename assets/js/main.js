@@ -1,3 +1,3 @@
-/**
- * Created by Primoz on 11/02/2017.
- */
+$('li').click(function(){
+   $(this).toggleClass('completed');
+});

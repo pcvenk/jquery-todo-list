@@ -1,5 +1,10 @@
 #todo-container {
     width: 350px;
     margin: 50px auto;
-    background-color: lightgray;
+    border: 1px solid lightgray;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
 }
