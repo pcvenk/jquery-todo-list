@@ -1,4 +1,5 @@
-//Checking off a completed to-do
+//Checking off a completed to-do (you add an event listener to an element present at page load,
+// on click of the second parameter the code below gets fired
 $('ul').on('click', 'li', function(){
    $(this).toggleClass('completed');
 });
@@ -20,6 +21,11 @@ $('input[type="text"').keypress(function(e) {
         var input = $(this).val();
         $(this).val('');
         //append new to-do to the end of the ul
-        $('ul').append('<li><span>X</span> ' + input + '</li>');
+        $('ul').append('<li><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> ' + input + '</li>');
     }
 });
+
+//Displaying the input field
+// $('h1 i').on('click', function(){
+//     $('input[type="text"').fadeToggle();
+// });
